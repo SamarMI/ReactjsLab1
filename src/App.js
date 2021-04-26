@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-
+/*
 class App extends React.Component {
   constructor(){
     super();
@@ -98,14 +98,28 @@ class Counter2 extends React.Component
 
 }
 
+*/
 
 
-/*
 class App extends React.Component {
 constructor(){
   super();
   this.state = {
     name : "Ahmed",
+    obj:{
+      id : "1",
+      jobTitleName : "Developer",
+      firstName : "Ahmed",
+      lastName : "Ali" ,
+      preferredFullName:"Ahmed Ali",
+      employeeCode:"El",
+      region:"CA",
+      phoneNumber : "408-2322265",
+      emailAdress : "ahmed.ali@gmail.com"
+    }
+
+
+    
 
   }
 }
@@ -120,8 +134,34 @@ ChangeName=()=>{
   render() {
     return (
       <div>
+      
           Welcome  samar {this.state.name}
         <button onClick={this.ChangeName}> ChangeName</button>
+
+        <div>
+        <h1> Display Json Object </h1>
+        <hr></hr>
+
+          id = {this.state.obj.id} 
+          <br></br>
+          Fistname = {this.state.obj.firstName}
+          <br></br>
+          Lastname = {this.state.obj.lastName}
+          <br></br>
+          jobTitleName = {this.state.obj.jobTitleName}
+          <br></br>
+          preferredFullName = {this.state.obj.preferredFullName}
+          <br></br>
+          employeeCode = {this.state.obj.employeeCode}
+          <br></br>
+          region = {this.state.obj.region}
+          <br></br>
+          phoneNumber = {this.state.obj.phoneNumber}
+          <br></br>
+          emailAdress = {this.state.obj.emailAdress}
+          <br></br>
+
+        </div>
 
           <Footer/>
 
@@ -148,6 +188,6 @@ class Footer extends React.Component {
 
 }
 
-*/
+
 
 export default App;
