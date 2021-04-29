@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.DoneTask {
+  background-color: rgb(190, 243, 190) !important;
+}
+
+.NotDoneTask {
+  background-color: rgb(228, 211, 211) !important;
+}
